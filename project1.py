@@ -4,7 +4,7 @@ from nltk.book import *
 # I worte different codes to answer this question. The question language was not clear (especially condition D). I found the most effective way
 # is to write a variable and then print this variable in a seperate code. Firt I selected the variable as "target word" and wrote it "targetW". 
 # Then I told python to select the words that meet the four conditions with one "if statemnt" and four conditions (ends with ise, contains z, contains pt, 
-# titlecased). After that I told Python to print it in a list format with quotation marks. 
+# titlecased). After that I told Python to print the variable. 
 
 targetW = [w for w in text6 if w.endswith ('ise') or 'z' in w or 'pt' in w or w.istitle()]
 print (targetW)
