@@ -41,4 +41,4 @@ cfd.tabulate(conditions=genres, samples=modals)
 # I predicted that the word "death" to be high in "news", but surprisingly it was mentioned 300% times more in "rligion"
 # The number of word "God" appeared in religion was not surprising
 # Thr word "future" was mentioned more in "news" which I did not expect. I thought news would cover what is happing in the present time and maybe the past, but not the future
-# Finally, the word "children" was mentioned the least in "science fiction" and religion! 
+# Finally, the word "children" was mentioned the least in "science fiction" and "religion"! 
