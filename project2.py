@@ -33,8 +33,8 @@ cfd = nltk.ConditionalFreqDist(
            for genre in brown.categories()
            for word in brown.words(categories=genre))
 genres = ['news', 'religion', 'hobbies', 'science_fiction', 'romance', 'humor']
-modals = ['blood', 'life', 'death', 'God', 'future', 'children']
-cfd.tabulate(conditions=genres, samples=modals)
+words = ['blood', 'life', 'death', 'God', 'future', 'children']
+cfd.tabulate(conditions=genres, samples=words)
 
 # I was surprised to see that the word "blood" was mentioned the highest number of times in "hobbies"
 # I also did not expect to see the word "life" almost mentioned eqaully in "religion" and "life"
