@@ -12,7 +12,7 @@ import re #import regular expression
 story1 = re.sub(r'(\w{2,})our', r'\1or', story, flags=re.I|re.M) # look for any words end with "our" and convert/change it to end with "or" instead of our. However, "our" is excluded if it appeared as a pronoun.The stroy should be "re-saved" in a new variable called story1.
 
 def S2Z(story1): #creat a new function called S to Z
-    if re.search(r'(\w+i|I)(s|S)(e|ing|ed|es|ation|ations|E|ING|ED|ES|ATION|ATIONS)\b', story1, flags=re.M): #look for all possible combination in story1 that may come with the word realize (upper and lower cases). They should be at the end of the word \b. If this is true them move to the following
+    if re.search(r'(\w+i|I)(s|S)(e|ing|ed|es|ation|ations|E|ING|ED|ES|ATION|ATIONS)\b', story1, flags=re.M): #look for all possible combination in story1 that may come with the word realize (uppercase or lowercase). They should be at the end of the word \b. If this is true then move to the following
         story1 = re.sub(r'(\w+i)(s)(e|ing|ed|es|ation|ations)\b', r'\1z\3', story1, flags=re.M) # divide the captured word into groups. keep the first group, replace the s with z and then keep the third group
         story1 = re.sub(r'(\w+I)(S)(E|ING|ED|ES|ATION|ATIONS)\b', r'\1Z\3', story1, flags=re.M) # divide the captured word into groups. keep the first group, replace the s with z and then keep the third group
     return story1
